@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 Google LLC
+ * Copyright 2022 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,14 +21,22 @@ apply plugin: 'dagger.hilt.android.plugin'
 apply plugin: 'androidx.navigation.safeargs.kotlin'
 
 android {
-    compileSdkVersion rootProject.compileSdkVersion
     buildFeatures {
         dataBinding true
     }
     defaultConfig {
         applicationId "com.google.samples.apps.sunflower"
         minSdkVersion rootProject.minSdkVersion
-        targetSdkVersion rootProject.targetSdkVersion
+
+        // Required for handling preview SDK versions
+        if (rootProject.hasProperty("compileSdkVersion") &&  rootProject.hasProperty("targetSdkVersion")) {
+            compileSdkVersion rootProject.compileSdkVersion
+            targetSdkVersion rootProject.targetSdkVersion
+        } else if (rootProject.hasProperty("compileSdkPreview") &&  rootProject.hasProperty("targetSdkPreview")) {
+            compileSdkPreview rootProject.compileSdkPreview
+            targetSdkPreview rootProject.targetSdkPreview
+        }
+
         testInstrumentationRunner "com.google.samples.apps.sunflower.utilities.MainTestRunner"
         versionCode 1
         versionName "0.1.6"
@@ -70,6 +78,7 @@ android {
 }
 
 dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     kapt "androidx.room:room-compiler:$rootProject.roomVersion"
     kapt "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
     kapt "com.google.dagger:hilt-android-compiler:$rootProject.hiltVersion"
@@ -77,7 +86,6 @@ dependencies {
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
     implementation "androidx.core:core-ktx:$rootProject.ktxVersion"
     implementation "androidx.fragment:fragment-ktx:$rootProject.fragmentVersion"
-    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.lifecycleVersion"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$rootProject.lifecycleVersion"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycleVersion"
     implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.navigationVersion"

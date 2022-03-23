@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 Google LLC
+ * Copyright 2022 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +22,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.observe
 import androidx.viewpager2.widget.ViewPager2
 import com.google.samples.apps.sunflower.adapters.GardenPlantingAdapter
 import com.google.samples.apps.sunflower.adapters.PLANT_LIST_PAGE_INDEX

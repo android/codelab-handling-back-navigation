@@ -27,6 +27,7 @@
     <string name="plant_date_header">Gepflanzt</string>
     <string name="watered_date_header">Zuletzt gegossen</string>
     <string name="menu_item_share_plant">Teilen</string>
+    <string name="menu_item_send_feedback" translation_description="Het label voor het menu-item Delen">Feedback verzenden</string>
     <string name="share_text_plant">Schau dir die %s Pflanze in der App "Sunflower" an</string>
 
     <!-- String plurals and their related prefix / suffix strings -->

@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright 2018 Google LLC
+  ~ Copyright 2022 Google LLC
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -28,6 +28,7 @@
     <string name="watered_date_header">最后浇水</string>
     <string name="menu_item_share_plant">分享</string>
     <string name="share_text_plant">在安卓 Sunflower APP 上看看这 %s</string>
+    <string name="menu_item_send_feedback" translation_description="共享菜單項的標籤">发送反馈</string>
 
     <!-- String plurals and their related prefix / suffix strings -->
     <!-- Item quantities for zero and one are not used in Chinese -->
