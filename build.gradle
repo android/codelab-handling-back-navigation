@@ -18,12 +18,12 @@ buildscript {
     // Define versions in a single place
     ext {
         // Sdk and tools
-        compileSdkVersion = 30
+        compileSdkVersion = 32
         minSdkVersion = 21
-        targetSdkVersion = 30
+        targetSdkVersion = 32
 
         // App dependencies
-        appCompatVersion = '1.1.0'
+        appCompatVersion = '1.6.0-alpha01'
         constraintLayoutVersion = '2.0.0-beta3'
         coreTestingVersion = '2.0.0'
         coroutinesVersion = "1.4.2"
@@ -34,12 +34,12 @@ buildscript {
         gsonVersion = '2.8.2'
         hiltVersion = '2.38.1'
         junitVersion = '4.12'
-        kotlinVersion = '1.4.30'
+        kotlinVersion = '1.6.0'
         ktlintVersion = '0.38.1'
         ktxVersion = '1.0.2'
-        lifecycleVersion = '2.2.0'
+        lifecycleVersion = '2.4.1'
         materialVersion = '1.2.0'
-        navigationVersion = '2.3.3'
+        navigationVersion = '2.4.1'
         okhttpLoggingVersion = '4.7.2'
         pagingVersion = '3.0.1'
         retrofitVersion = '2.9.0'

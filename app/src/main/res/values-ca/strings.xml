@@ -26,6 +26,7 @@
     <string name="garden_empty">El jardí és buit</string>
     <string name="plant_date_header">Plantada</string>
     <string name="watered_date_header">Regada per darrera vegada</string>
+    <string name="menu_item_send_feedback" translation_description="L'etiqueta de l'element del menú Comparteix">Enviar comentaris</string>
     <string name="menu_item_share_plant">Comparteix</string>
     <string name="share_text_plant">Mira la planta %s a l\'aplicació Android Sunflower</string>
 

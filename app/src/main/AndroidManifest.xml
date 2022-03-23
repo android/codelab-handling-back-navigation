@@ -32,7 +32,8 @@
         android:theme="@style/Theme.Sunflower">
         <activity
             android:name=".GardenActivity"
-            android:theme="@style/Theme.Sunflower.NoActionBar">
+            android:theme="@style/Theme.Sunflower.NoActionBar"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
