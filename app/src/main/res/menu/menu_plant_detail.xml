@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2018 Google LLC
+  ~ Copyright 2022 Google LLC
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -22,6 +22,12 @@
         android:id="@+id/action_share"
         android:icon="@drawable/ic_detail_share"
         android:title="@string/menu_item_share_plant"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_feedback"
+        android:icon="@drawable/ic_thumbs_up"
+        android:title="@string/menu_item_send_feedback"
         app:showAsAction="ifRoom" />
 
 </menu>

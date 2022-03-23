@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 Google LLC
+ * Copyright 2022 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -72,7 +72,7 @@ class PlantDetailFragment : Fragment() {
 
             var isToolbarShown = false
 
-            // scroll change listener begins at Y = 0 when image is fully collapsed
+            // Scroll change listener begins at Y = 0 when image is fully collapsed
             plantDetailScrollview.setOnScrollChangeListener(
                 NestedScrollView.OnScrollChangeListener { _, _, scrollY, _, _ ->
 
@@ -102,6 +102,10 @@ class PlantDetailFragment : Fragment() {
                 when (item.itemId) {
                     R.id.action_share -> {
                         createShareIntent()
+                        true
+                    }
+                    R.id.action_feedback -> {
+                        findNavController().navigate(PlantDetailFragmentDirections.actionPlantDetailFragmentToSurveyFragment())
                         true
                     }
                     else -> false

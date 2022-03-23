@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright 2018 Google LLC
+  ~ Copyright 2022 Google LLC
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -26,6 +26,21 @@
         <item name="colorSurface">@color/sunflower_green_900</item>
         <item name="colorSecondary">@color/sunflower_yellow_300</item>
         <item name="android:colorBackground">@color/sunflower_green_900</item>
+
+        <!-- change navigation bar color -->
+        <item name="android:navigationBarColor">
+            @android:color/transparent
+        </item>
+
+        <!-- change status bar color -->
+        <item name="android:statusBarColor">
+            @android:color/transparent
+        </item>
+
+        <!-- Optional: set the status bar light and content dark. -->
+        <item name="android:windowLightStatusBar">
+            false
+        </item>
     </style>
 
     <style name="Theme.Sunflower" parent="Base.Theme.Sunflower"/>

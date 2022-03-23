@@ -1,0 +1,141 @@
+html {
+    background-color: #e4f3e5;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    accent-color: #059101;
+    padding: 72px 24px 24px 24px;
+    margin: auto;
+    max-width: 640px;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type="button"] {
+    background-color: #04aa6d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 24px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row-centered {
+    display: flex;
+    justify-content: center;
+}
+
+.row-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.row-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.row-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.center {
+    margin: auto;
+}
+
+.td-label {
+    vertical-align: bottom;
+}
+
+.button {
+    padding: 12px 24px;
+    border-radius: 48px;
+}
+
+.button:hover {
+    /* background-color: #4CAF50; Green */
+    /* cursor: pointer; */
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+.button.next {
+    background-color: #059101;
+}
+
+.button.back {
+    background-color: #ffffff;
+    /* border: 2px solid #4abc79;  */
+}
+
+.button.back a {
+    color: #059101;
+}
+
+h2 {
+    font-weight: 400;
+    margin-top: 0;
+    padding-bottom: 16px;
+    border-bottom: #e4f3e5 solid 1px;
+}
+
+h3 {
+    font-weight: 400;
+    margin-top: 0;
+}

@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright 2018 Google LLC
+  ~ Copyright 2022 Google LLC
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -28,6 +28,7 @@
     <string name="watered_date_header">最後に水をあげた日</string>
     <string name="menu_item_share_plant">共有</string>
     <string name="share_text_plant">%s という植物を「Sunflower」アプリで見てみてください</string>
+    <string name="menu_item_send_feedback" translation_description="[共有]メニュー項目のラベル">フィードバックを送信する</string>
 
     <!-- String plurals and their related prefix / suffix strings -->
     <!-- Item quantities for zero and one are not used in Japanese -->

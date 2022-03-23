@@ -28,6 +28,7 @@
     <string name="plant_date_header">বপন সম্পন্ন হয়েছে</string>
     <string name="watered_date_header">সর্বশেষ জল দেত্তয়া</string>
     <string name="menu_item_share_plant">শেয়ার</string>
+    <string name="menu_item_send_feedback" translation_description="শেয়ার মেনু আইটেমের জন্য লেবেল">মতামত পাঠানো</string>
     <string name="share_text_plant">অ্যানড্রয়েড সানফ্লাওয়ার অ্যাপে আমার %s গাছ টি দেখুন</string>
 
     <!-- String plurals and their related prefix / suffix strings -->

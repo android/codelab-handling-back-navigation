@@ -14,19 +14,18 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.sunflower.data
+package com.google.samples.apps.sunflower
 
-import androidx.room.Embedded
-import androidx.room.Relation
+import android.content.Context
+import android.webkit.JavascriptInterface
+import android.widget.Toast
 
-/**
- * This class captures the relationship between a [Plant] and a user's [GardenPlanting], which is
- * used by Room to fetch the related entities.
- */
-data class PlantAndGardenPlantings(
-    @Embedded
-    val plant: Plant,
+/** Instantiate the interface and set the context  */
+class WebAppInterface(private val mContext: Context) {
 
-    @Relation(parentColumn = "id", entityColumn = "plant_id")
-    val gardenPlantings: List<GardenPlanting> = emptyList()
-)
+    /** Show a toast from the web page  */
+    @JavascriptInterface
+    fun showToast(toast: String) {
+        Toast.makeText(mContext, toast, Toast.LENGTH_LONG).show()
+    }
+}
