@@ -44,32 +44,5 @@ class SurveyFragment : Fragment() {
         // Use the existing form or replace it with your own
         webView.loadUrl("https://docs.google.com/forms/d/e/1FAIpQLSflribfz_k78HvGPW-yDLg3b6j2PG52s0QQF6zCy7RPT79FwA/viewform?usp=sf_link")
         webView.settings.javaScriptEnabled = true
-
-        // Create the callback, note it's initially set to false since the webview will have a single
-        // page in the page stack, when the fragment opens
-        val onBackPressedCallback = object: OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                when {
-                    webView.canGoBack() -> webView.goBack()
-                }
-            }
-        }
-
-        // Register the callback with the onBackPressedDispatcher
-        requireActivity().onBackPressedDispatcher.addCallback(onBackPressedCallback)
-
-        disableOnBackPressedCallback(webView, onBackPressedCallback)
-    }
-
-    private fun disableOnBackPressedCallback(webView: WebView, onBackPressedCallback: OnBackPressedCallback) {
-        webView.webViewClient = object: WebViewClient() {
-             // Use webView.canGoBack() to determine whether or not the OnBackPressedCallback is enabled.
-             // if the callback is enabled, the app takes control and determines what to do. If the
-             // callbacks is disabled; the back nav gesture will go back to the topmost activity/fragment
-             // in the back stack.
-            override fun doUpdateVisitedHistory(view: WebView?, url: String?, isReload: Boolean) {
-                onBackPressedCallback.isEnabled = webView.canGoBack()
-            }
-        }
     }
 }
