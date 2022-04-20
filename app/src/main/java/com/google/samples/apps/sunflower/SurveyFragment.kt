@@ -41,8 +41,16 @@ class SurveyFragment : Fragment() {
 
         val webView = view.findViewById(R.id.webView) as WebView
 
-        // Use the existing form or replace it with your own
-        webView.loadUrl("https://docs.google.com/forms/d/e/1FAIpQLSflribfz_k78HvGPW-yDLg3b6j2PG52s0QQF6zCy7RPT79FwA/viewform?usp=sf_link")
+        webView.webViewClient = object : WebViewClient() {
+            // Prevents opening Chromium from the Android app
+            override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
+                return false
+            }
+        }
+        // Use the existing survey URL or replace it with your web app. See /survey-web-app.
+        webView.loadUrl("https://predictive-back-survey-web-app.firebaseapp.com/")
         webView.settings.javaScriptEnabled = true
+        webView.addJavascriptInterface(WebAppInterface(requireContext()), "Android")
+
     }
 }
