@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright 2018 Google LLC
+  ~ Copyright 2022 Google LLC
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
   ~ limitations under the License.
   -->
 
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- To see how these attributes are used, please visit https://material.io/develop/android/theming/color/ -->
     <style name="Base.Theme.Sunflower" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -26,6 +26,23 @@
         <item name="colorSurface">@color/sunflower_gray_50</item>
         <item name="colorSecondary">@color/sunflower_yellow_500</item>
         <item name="android:colorBackground">@color/sunflower_green_500</item>
+
+
+        <!-- change navigation bar color -->
+        <item name="android:navigationBarColor">
+            @android:color/transparent
+        </item>
+
+        <!-- change status bar color -->
+        <item name="android:statusBarColor">
+            @android:color/transparent
+        </item>
+
+        <!-- Optional: set the status bar light and content dark. -->
+        <item name="android:windowLightStatusBar">
+            true
+        </item>
+
     </style>
 
     <style name="Theme.Sunflower" parent="Base.Theme.Sunflower"/>
