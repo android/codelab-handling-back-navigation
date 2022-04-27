@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 Google LLC
+ * Copyright 2022 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,7 +23,7 @@ buildscript {
         targetSdkPreview = "Tiramisu"
 
         // App dependencies
-        appCompatVersion = '1.6.0-alpha01'
+        appCompatVersion = '1.6.0-alpha03'
         constraintLayoutVersion = '2.0.0-beta3'
         coreTestingVersion = '2.0.0'
         coroutinesVersion = "1.4.2"
