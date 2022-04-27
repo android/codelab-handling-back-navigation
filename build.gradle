@@ -18,7 +18,7 @@ buildscript {
     // Define versions in a single place
     ext {
         // Sdk and tools
-        minSdkVersion = 23
+        minSdkVersion = 29
         compileSdkPreview = "Tiramisu"
         targetSdkPreview = "Tiramisu"
 
