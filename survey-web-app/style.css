@@ -1,3 +1,16 @@
+html {
+    background-color: #e4f3e5;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    accent-color: #059101;
+    padding: 24px;
+    margin: auto;
+    max-width: 640px;
+    font-size: 16px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -33,8 +46,8 @@ input[type="button"]:hover {
 
 .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+    background-color: #ffffff;
+    padding: 24px;
 }
 
 .col-25 {
@@ -63,10 +76,66 @@ input[type="button"]:hover {
     justify-content: center;
 }
 
+.row-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.row-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.row-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .center {
     margin: auto;
 }
 
 .td-label {
     vertical-align: bottom;
+}
+
+.button {
+    padding: 12px 24px;
+    border-radius: 48px;
+}
+
+.button:hover {
+    /* background-color: #4CAF50; Green */
+    /* cursor: pointer; */
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+.button.next {
+    background-color: #059101;
+}
+
+.button.back {
+    background-color: #ffffff;
+    /* border: 2px solid #4abc79;  */
+}
+
+.button.back a {
+    color: #059101;
+}
+
+h2 {
+    font-weight: 400;
+    margin-top: 0;
+    padding-bottom: 16px;
+    border-bottom: #e4f3e5 solid 1px;
+}
+
+h3 {
+    font-weight: 400;
+    margin-top: 0;
 }
