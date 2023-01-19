@@ -48,7 +48,7 @@ class SurveyFragment : Fragment() {
             }
         }
         // Use the existing survey URL or replace it with your web app. See /survey-web-app.
-        webView.loadUrl("https://predictive-back-survey-web-app.firebaseapp.com/")
+        webView.loadUrl("https://predictive-back-survey.firebaseapp.com/")
         webView.settings.javaScriptEnabled = true
         webView.addJavascriptInterface(WebAppInterface(requireContext()), "Android")
 
